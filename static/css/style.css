@@ -1,0 +1,7 @@
+@import "reset.css";
+@import "variables.css";
+
+/*components*/
+
+/*screens*/
+@import "screens/index.css";
