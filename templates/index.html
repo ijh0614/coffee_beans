@@ -7,7 +7,7 @@
     <title>Coffee beans</title>
     <link rel="stylesheet" href="/static/css/style.css">
 </head>
-<body>
+<body class="index-body">
     <header>
         <nav class="head-nav">
             <a href="index.html">
@@ -19,13 +19,14 @@
 
             <div></div>
             <div></div>
+            <div></div>
 
             <a href="#">
-                <div>
+                <div class="host-page-btn">
                     <h1>Go to host page</h1>
                 </div>
             </a>
-            <a href="#">
+            <a href="#" class="login-btn">
                 <div>
                     <h1>Login</h1>
                 </div>
@@ -34,28 +35,86 @@
     </header>
 
     <main>
-        <div class="search-area">
-            <form action="" class="search-box">
+        <form action="" class="search-box">
+                <input class="search-bean" type="text" list="beans-list" placeholder="어떤 원두를 찾으시나요?">
+                <datalist id="beans-list">
+                    <option value="케냐 AA" />
+                    <option value="피베리" />
+                    <option value="과테말라 안티구아" />
+                    <option value="브라질 산토스" />
+                    <option value="수프레모" />
+                    <option value="코스타리카 따라주" />
+                </datalist>
+
+                <div class="screen"></div>
                 
-            </form>
-        </div>
+                <input class="search-method" type="text" list="extraction-method" placeholder="추출 방식">
+                <datalist id="extraction-method">
+                    <option value="에스프레소" />
+                    <option value="핸드 드립" />
+                    <option value="콜드 브루" />
+                    <option value="달임식" />
+                </datalist>
+                
+                <div class="screen"></div>
+                
+                <input class="search-area" type="text" list="area" placeholder="지역">
+                <datalist id="area">
+                    <option value="서울" />
+                    <option value="부산" />
+                    <option value="인천" />
+                    <option value="대구" />
+                    <option value="대전" />
+                    <option value="광주" />
+                    <option value="울산" />
+                </datalist>
+                
+                <div class="screen"></div>
+
+                <input class="search-cafe" type="text" list="cafe-info" placeholder="카페 특이사항">
+                <datalist id="cafe-info">
+                    <option value="없음" />
+                    <option value="반려동물 출입 가능" />
+                    <option value="야외 테라스 존재" />
+                </datalist>
+
+                <button class="search-btn">
+                    <i class="fas fa-search fa-2x"></i>
+                </button>
+        </form>
+        
     </main>
     
     <footer>
         <div class="best-coffee-list">
             <a href="#">
                 <div class="one best-coffee">
-
+                    <div class="img-container">
+                        <img intrinsicsize="" src="../static/image/1.jpg" alt="">
+                    </div>
+                    <div>
+                        <h2>벨벳 다크 모카...</h2>
+                    </div>
                 </div>
             </a>
             <a href="#">
                 <div class="two best-coffee">
-
+                    <div class="img-container">
+                        <img intrinsicsize="" src="../static/image/2.jpg" alt="">
+                    </div>
+                    <div>
+                        <h2>콜드 브루 몰트</h2>
+                    </div>
                 </div>
             </a>
             <a href="#">
                 <div class="three best-coffee">
-
+                    <div class="img-container">
+                        <img intrinsicsize="" src="../static/image/3.jpg" alt="">
+                    </div>
+                    <div>
+                        <h2>콜드 브루 플로트</h2>
+                    </div>
                 </div>
             </a>
             <a href="#">
@@ -95,5 +154,7 @@
             </a>
         </div>
     </footer>
+
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
 </body>
 </html>
